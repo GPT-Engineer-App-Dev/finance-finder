@@ -1,17 +1,19 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Box, Container, Heading, Text, VStack } from "@chakra-ui/react";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
+    <Container maxW="container.xl" py={8}>
+      <VStack spacing={8} align="start">
+        <Heading as="h1" size="2xl">Financial Times</Heading>
+        <Text fontSize="lg">Welcome to the Financial Times. Stay updated with the latest news in World, Business, and Opinion.</Text>
+        <Box>
+          <Heading as="h2" size="lg" mb={4}>Main News</Heading>
+          <Text>Latest news article goes here...</Text>
+        </Box>
+        <Box>
+          <Heading as="h2" size="lg" mb={4}>Other News</Heading>
+          <Text>Additional news articles go here...</Text>
+        </Box>
       </VStack>
     </Container>
   );
